@@ -1,0 +1,362 @@
+/*  Include the fonts from fonts.CSS file */
+@import url(./fonts.css);
+/* CSS Variables */
+@import url(./partials/_variables.css);
+/* Global Variables CSS */
+@import url(./partials/_global.css);
+body{
+    background-color: rgba(0, 0, 0, 0.959) ;
+}
+
+/** ============ Begin Navigation ===================== */
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 4rem;
+    /* background-color: rgb(168, 255, 29); */
+} 
+
+/* .logo-padding{
+    margin :  0 2rem 0 4rem;
+} */
+.logo-width{
+    width: 5rem;
+    height: 1rem;
+}
+/* .color-blue{
+    background-color: blue; 
+    color: blue;
+    z-index: 100;
+} */
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem;
+    background-color: rgb(0, 0, 0);
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 16px/2px var(--source_code);
+    color: var(--title-color);
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+
+/* .header_area .main-menu .navbar .container-fluid .collapse .navbar-nav .nav-item .active{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+} */
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 16px/2px var(--source_code);
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: var(--title-color);
+    text-shadow: 1px 1px 4px var(--text-shadow);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+}
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    /* background-color: white;
+    color: black; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+/** =============== End Navigation ==================== */ 
+/** =============== Beginning of Banner ================= */
+/* body{
+    background-color: #8a8a8a;
+} */
+/* section .site-banner{
+    background-color: yellow;
+} */
+/* .frame-resizer{
+    width: 25vw;
+} */
+.site-main .site-banner{
+    background: url(../img/Logo.png) no-repeat 0% 50%;
+    /* padding-top:1000px */
+}
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after{
+    content:" ";
+    height: 2px;
+    width: 18vw;
+    background: rgb(60, 255, 0);
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;  
+}
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+.site-main .site-banner .site-title > h4, 
+.site-main .site-banner .site-title > h1,
+.site-main .site-banner .site-title > h3{
+    text-shadow: 2px 2px 9px var(--text-shadow);
+}
+
+/** =============== End of Banner ================= */
+/** =============== Start ABOUT Section ============ */
+.site-main .about-area{
+    padding:8rem 5rem;
+}
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font:normal bold 49px/60px var(--source_code);
+    letter-spacing: 21px;
+    color: rgb(47, 255, 238);
+    text-shadow: 2px 2px 10px rgb(255, 0, 0);
+}
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+    text-align: justify;
+}
+
+/** =============== END ABOUT Section ============ */
+/** =============== Projects ===================== */
+
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+    
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    background-color: rgb(0, 255, 17);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+    filter:brightness(0.5)
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 30%;
+    filter:brightness(0.5)
+}
+.site-main .brand-area .first-row .col-lg-4 > .java > img{
+    /* width: 50%; */
+    height: 130%;
+}
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow2);
+    filter:brightness(1.0);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover>img{
+    filter: brightness(1);
+}
+/* todo: Container to crop the images  */
+/* .projects-img{
+    width: 8.5vw;
+    height: 60px;
+    object-fit: cover;
+    overflow: hidden;
+} */
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+.site-main .brand-area .experience-area .years-area{
+    /* background: url(#) no-repeat 45px 20px; */
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-main .brand-area .experience-area .bg-panel1{
+    position: relative;
+    left: 0rem; top: -12rem;
+    background-color: #0bc94124;
+    width: 140px;
+    height: 120px;
+    z-index: -1;
+}
+/* .site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px; 
+    bottom: 0%;
+    background-color: #c9670b24;
+    width: 400px;
+    height: 400px;
+    margin-left:340px;
+    z-index: -1;
+}  */
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--source_code);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+.site-main .brand-area .experience-area .years-area h2>span{
+    font: normal 600 22px/30px var(--source_code);
+}
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 8rem;
+    /* background-color: black; */
+}
+/* End Brand Area */
+
+/* Services Area */
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+.site-main > .services-area .services{
+    background-color: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+/* End of Services */
+
+
+/* Project Area */
+.site-main .project-area{
+    padding: 4rem 0;
+}
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--source_code);
+    text-transform: uppercase;
+}
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--source_code);
+}
+.site-banner .project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf)
+}
+/* End of Projects */
+
+/* THE GUYS SLIDING  */
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;   
+}
+/* Image of per sliding item */
+.site-main .about-area .client .client-img{
+    padding: 2rem;
+}
+
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+/* The large title */
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/20px var(--source_code);
+}
+Paragraph
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+/* The box container per slide element */
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+/* The Button */
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+/* End of the slidy thingy */
+
+/* SUBSCRIPE TO MY HENTAI */
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title{
+    font: normal 700 30px/30px var(--source_code);
+    color: rgb(255, 238, 0);
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 0.8rem 1rem;
+    border: 1px solid black;
+    /* background: transparent; */
+    color: black;
+    font: normal 500 17px/20px var(--source_code);
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: green;
+}
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: rgb(70, 255, 113);
+    color: #000;
+    font-weight: 300;
+    padding: .7rem 2rem;
+}
+/* End of subscription */
+
+/* Footer */
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/) no-repeat;
+}
+footer.footer-area .social h5{
+    font: normal 500 23px/30px var(--source_code);
+}
+/* Icons */
+footer.footer-area .social a > i{
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+/* Hover over icons */
+footer.footer-area .social a:hover > i{
+    color: green;
+}
+/** =============== End of Projects ============== */   
